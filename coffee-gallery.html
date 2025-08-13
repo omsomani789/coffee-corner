@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .video-container {
+      margin-top: 30px;
+    }
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Coffee Gallery</h1>
+  
+  <div class="gallery">
+    <img src="images/coffee1.jpg" alt="Coffee 1" loading="lazy">
+    <img src="images/coffee2.jpg" alt="Coffee 2" loading="lazy">
+    <img src="images/coffee3.jpg" alt="Coffee 3" loading="lazy">
+    <img src="images/coffee4.jpg" alt="Coffee 4" loading="lazy">
+  </div>
+
+  <div class="video-container">
+    <h2>Coffee Brewing Video</h2>
+    <video controls loading="lazy">
+      <source src="video/coffee-brewing.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</body>
+</html>
